@@ -33,8 +33,4 @@ public class DefaultCountingOutRhymer {
             return EMPTY_VALUE;
         return numbers[total--];
     }
-
-    public int[] getNumbers() {
-        return numbers;
-    }
 }
