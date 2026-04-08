@@ -19,6 +19,7 @@ public class IntLinkedList {
         return last == null;
     }
 
+    // TODO: ta metoda nic nie sprawdza
     public boolean isFull() {
         return false;
     }
@@ -37,4 +38,36 @@ public class IntLinkedList {
         return ret;
     }
 
+}
+
+class Node {
+
+    private final int value;
+    private Node prev;
+    private Node next;
+
+    public Node(int i) {
+        value = i;
+    }
+
+    public int getValue() {
+        return this.value;
+    }
+
+    public Node getPrev() {
+        return this.prev;
+    }
+
+    public void setPrev(Node node) {
+        this.prev = node;
+    }
+
+    // TODO: czy ta metoda jest potrzebna?
+    public Node getNext() {
+        return this.next;
+    }
+
+    public void setNext(Node node) {
+        this.next = node;
+    }
 }
