@@ -19,6 +19,7 @@ public class IntLinkedList {
         return last == null;
     }
 
+    // TODO: ta metoda nic nie sprawdza
     public boolean isFull() {
         return false;
     }
@@ -61,6 +62,7 @@ class Node {
         this.prev = node;
     }
 
+    // TODO: czy ta metoda jest potrzebna?
     public Node getNext() {
         return this.next;
     }
